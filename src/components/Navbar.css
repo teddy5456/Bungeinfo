@@ -1,0 +1,52 @@
+
+ header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+ }
+
+
+
+ .loko {
+  display: flex;
+  align-items: center;
+ }
+
+ .loko h1 {
+  border-right: 3px black solid;
+  padding: 10px;
+  font-weight: 900;
+ }
+
+ .loko p {
+  padding: 10px;
+  color: gold;
+  font-weight: 900;
+  font-style: italic;
+ }
+
+  nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align the list items */
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px; /* Add margin between list items */
+  }
+  
+  nav ul li a {
+    color: rgb(15, 15, 15); /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  nav ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
+  }
+  
