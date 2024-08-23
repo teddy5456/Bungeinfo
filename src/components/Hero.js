@@ -12,20 +12,19 @@ function Hero() {
           </p>
           <a href="#learn-more" className="hero-button">Learn More</a>
         </div>
-        
-        <div className="hero-images">
-          <img
-            className="hero-image"
-            src={require('../assets/4541387-removebg-preview.png')}
-            alt="Parliament of Kenya"
-          />
-         
+
+        <div className="hero-image-container">
+                <img
+                  className="hero-image"
+                   src="http://www.parliament.go.ke/sites/default/files/articles/backGround.jpg"
+                  alt="Hero Background"
+                />
         </div>
       </div>
-      
+
+         
       <div className="info-section">
         <div className="info-card card-one">
-          
           <div>
           <h4>Understanding the Bicameral Legislature</h4>
           <p>
@@ -34,13 +33,6 @@ function Hero() {
           <a href="#bicameral" className="info-link">Learn More</a>
           </div>
 
-
-          <img
-            className="hero-image"
-            src="http://www.parliament.go.ke/sites/default/files/articles/backGround.jpg"
-            alt="Kenyan Parliament Building"
-          />
-        
         </div>
 
         <div className="info-card card-two">

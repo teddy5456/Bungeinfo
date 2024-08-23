@@ -8,6 +8,15 @@ background-color: #f9f9f9;
 padding: 20px 100px;
 }
 
+.navbar-logo {
+display: flex;
+align-items: center;
+}
+
+.navbar-logo img {
+width: 70px;
+}
+
 .navbar-logo h1 {
   font-size: 1.8rem;
   color: #f9c842; 

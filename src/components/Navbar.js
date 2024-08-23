@@ -6,6 +6,14 @@ function Navbar() {
   return (
     <header className="navbar-header">
       <div className="navbar-logo">
+      <div className="hero-images">
+          <img
+            className="hero-imag"
+            src={require('../assets/4541387-removebg-preview.png')}
+            alt="Parliament of Kenya"
+          />
+         
+        </div>
         <h1>Parliament</h1>
       </div>
       

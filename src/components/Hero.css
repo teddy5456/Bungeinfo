@@ -11,18 +11,23 @@
 .hero-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 90%;
   background-color: #fff;
-  padding: 90px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  overflow: hidden;
+  position: relative; /* Make sure the relative positioning allows for absolute children */
 }
 
 .hero-text-section {
-  flex: 1;
-  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
   width: 60%;
+  background: linear-gradient(to left, rgba(152, 172, 229, 0) 0%, rgb(48, 125, 105) 100%);
+  border-radius: 8px;
+  position: relative; /* Position relative to use absolute positioning for ::after */
+  overflow: hidden; /* Hide overflowed parts */
 }
 
 .hero-text-section h2 {
@@ -44,7 +49,7 @@
 }
 
 .hero-button {
-  background-color: #216217;
+  border: 2px solid #216217;
   color: #00332c;
   padding: 10px 20px;
   text-decoration: none;
@@ -52,20 +57,59 @@
   font-size: 1.0rem;
   font-weight: 600;
   transition: background-color 0.3s ease;
+  margin-left: 100px;
+  margin-right: 200px;
 }
 
 .hero-button:hover {
-  background-color: #e6b732;
+  border: 2px solid #e6b732;
+  background: #e6b732;
 }
 
-.hero-images {
-  display: flex;
-  gap: 20px;
+.hero-image-container {
+  width: 40%;
+  position: relative;
+  height: 66vh; /* Adjust as needed */
+  overflow: hidden;
+  opacity: 0.2;
+}
+
+.hero-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px; 
+  height: 100%;
+  background: linear-gradient(to right, #f9f9f9, rgba(199, 0, 0, 0.1));
+  z-index: 1; 
+}
+
+.hero-text-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 200px; 
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(48, 125, 105, 1) 100%);
+  z-index: 2; /* Ensure it's above the image but below text */
 }
 
 .hero-image {
-  max-width: 400px;
-  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(9, 70, 236, 0) 0%, rgb(111, 168, 194) 100%);
 }
 
 .info-section {
@@ -83,15 +127,16 @@
   border-radius: 8px;
   flex: 1;
   margin-right: 20px;
+  font-family: 'Dm Sans';
 }
 
 .card-one {
-  max-width:55%;
+  max-width: 55%;
 }
 
 .card-two {
   flex-direction: column;
-  max-width:45%;
+  max-width: 45%;
 }
 
 .info-card h4 {
