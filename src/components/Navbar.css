@@ -1,52 +1,79 @@
+/* Navbar.css */
 
- header {
+.navbar-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #f9f9f9;
+padding: 20px 100px;
+}
+
+.navbar-logo h1 {
+  font-size: 1.8rem;
+  color: #f9c842; 
+}
+
+.navbar-logo p {
+  font-size: 0.8rem;
+  color: #000000; /* White color for 'info' text */
+}
+
+.navbar {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navbar-menu {
+  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0;
- }
+  margin: 0;
+  padding: 0;
+}
 
+.navbar-item {
+  margin-left: 30px;
+}
 
+.navbar-link {
+  text-decoration: none;
+  color: #000000; 
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Poppins';
+  transition: color 0.3s ease;
+}
 
- .loko {
-  display: flex;
-  align-items: center;
- }
+.navbar-link:hover {
+  color: #f9c842; /* Accent color on hover */
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
 
- .loko h1 {
-  border-right: 3px black solid;
-  padding: 10px;
-  font-weight: 900;
- }
-
- .loko p {
-  padding: 10px;
-  color: gold;
-  font-weight: 900;
+.weird a {
   font-style: italic;
- }
+}
 
-  nav ul {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center align the list items */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
     align-items: center;
   }
-  
-  nav ul li {
-    margin: 0 15px; /* Add margin between list items */
+
+  .navbar-item {
+    margin-left: 0;
+    margin-bottom: 10px;
   }
-  
-  nav ul li a {
-    color: rgb(15, 15, 15); /* White text color */
-    text-decoration: none; /* Remove underline from links */
-    font-weight: bold; /* Bold text */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+
+  .navbar-link {
+    font-size: 1.2rem;
   }
-  
-  nav ul li a:hover {
-    color: #FFD700; /* Gold color on hover */
+}
+
+@media (max-width: 480px) {
+  .navbar-logo h1 {
+    font-size: 1.5rem;
   }
-  
+
+  .navbar-link {
+    font-size: 1rem;
+  }
+}

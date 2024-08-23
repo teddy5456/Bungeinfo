@@ -1,30 +1,37 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import AboutParliament from './AboutParliament';
 
 function Navbar() {
   return (
-    <header>
-    <div className='loko'>
-    <h1>Parliament</h1>
-    <p>info</p>
-    </div>
+    <header className="navbar-header">
+      <div className="navbar-logo">
+        <h1>Parliament</h1>
+      </div>
       
-    <nav className="navbar">
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about-parliament">About Parliament</Link>
-        </li>
-        <li>
-          <Link to="/speakers">Speakers</Link>
-        </li>
-          <li className='weird'><a href="#contact">Contact and Feedback</a></li>
+      <div>
+      <nav className="navbar">
+        <ul className="navbar-menu">
+          <li className="navbar-item">
+            <Link to="/" className="navbar-link">Home</Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/about-parliament" className="navbar-link">About Parliament</Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/speakers" className="navbar-link">Speakers</Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/history" className="navbar-link">History</Link>
+          </li>
+          <li className="navbar-item">
+            <a href="#contact" className="navbar-link">Contact and Feedback</a>
+          </li>
+
         </ul>
       </nav>
+      </div>
+     
     </header>
   );
 }

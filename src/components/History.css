@@ -1,0 +1,46 @@
+.history-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .timeline-section {
+    margin-bottom: 20px;
+  }
+  
+  .timeline-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .factsheet, .purpose, .background, .chronology, .independence {
+    margin: 20px 0;
+  }
+  
+  .factsheet h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .purpose h3, .background h3, .chronology h3, .independence h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .factsheet p, .purpose p, .background p, .chronology p, .independence p {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  .timeline-item {
+    background: #e86971;
+    color: white;
+  }
+  
