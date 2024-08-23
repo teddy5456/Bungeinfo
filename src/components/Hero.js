@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 
+
 function Hero() {
   return (
     <div className="hero-container">
@@ -16,7 +17,7 @@ function Hero() {
         <div className="hero-image-container">
                 <img
                   className="hero-image"
-                   src="http://www.parliament.go.ke/sites/default/files/articles/backGround.jpg"
+                  src={require('../assets/backGround.jpg')}
                   alt="Hero Background"
                 />
         </div>
