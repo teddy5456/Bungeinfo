@@ -58,80 +58,8 @@ const History = () => {
       <section className="timeline-section">
         <h1>HISTORY OF THE PARLIAMENT OF KENYA</h1>
         <div className="timeline">
-    <Timeline events={timelineEvents} />
-  </div>
-        <VerticalTimeline>
-          <VerticalTimelineElement
-            dateText="1906"
-            dateInnerStyle={{ background: '#e86971' }}
-          >
-            <h3>Legislative Council Established</h3>
-            <p>The LegCo was established following the promulgation of the East African Order-in-Council.</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            dateText="1907"
-            dateInnerStyle={{ background: '#e86971' }}
-          >
-            <h3>First Sitting of LegCo</h3>
-            <p>The LegCo held its first sitting on August 16, 1907.</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            dateText="1911"
-            dateInnerStyle={{ background: '#e86971' }}
-          >
-            <h3>Election of Unofficial Members</h3>
-            <p>The question of electing Unofficial Members was first brought up by the Convention of Associations.</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            dateText="1917"
-            dateInnerStyle={{ background: '#e86971' }}
-          >
-            <h3>First Election of European Members</h3>
-            <p>Legislation was introduced to provide for the election of eleven European Members.</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            dateText="1924"
-            dateInnerStyle={{ background: '#e86971' }}
-          >
-            <h3>Representation of Indians and Arabs</h3>
-            <p>The Legislative Council (Amendment) Ordinance provided for representation of Indians and Arabs.</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            dateText="1960"
-            dateInnerStyle={{ background: '#e86971' }}
-          >
-            <h3>First Lancaster House Conference</h3>
-            <p>Changes were made to the Lennox Boyd Constitution as a result of the Lancaster House Conference.</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            dateText="1962"
-            dateInnerStyle={{ background: '#e86971' }}
-          >
-            <h3>Formation of Bicameral Parliament</h3>
-            <p>The Lancaster Constitution established a Bicameral Legislature with the Senate and House of Representatives.</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            dateText="1966"
-            dateInnerStyle={{ background: '#e86971' }}
-          >
-            <h3>Disbandment of the Senate</h3>
-            <p>The Senate was abolished, and a unicameral legislature was formed.</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            dateText="1970"
-            dateInnerStyle={{ background: '#e86971' }}
-          >
-            <h3>First African Speaker</h3>
-            <p>Hon. Fredrick Mbiti G. Mati became the first African Speaker of the National Assembly.</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            dateText="2010"
-            dateInnerStyle={{ background: '#e86971' }}
-          >
-            <h3>New Constitutional Dispensation</h3>
-            <p>The 2010 Constitution re-established the Senate and increased the size of the National Assembly.</p>
-          </VerticalTimelineElement>
-        </VerticalTimeline>
+            <Timeline events={timelineEvents} />
+        </div>
       </section>
 
       <section className="factsheet">
@@ -147,28 +75,6 @@ const History = () => {
         <p>Printed by: Design & Layout: Gitonga Ruchiami</p>
       </section>
 
-      <section className="purpose">
-        <h3>Purpose and Acknowledgement</h3>
-        <p>This Factsheet is part of the Kenya National Assembly Factsheets Series developed to enhance public understanding and awareness, and to build knowledge on the work of the Assembly and its operations. It serves as a guide for Members of Parliament, staff, and the public. The information is not exhaustive, and readers are advised to refer to original sources for further information.</p>
-        <p>Special thanks to the members of the National Assembly Taskforce on Factsheets, Speaker’s Rulings and Guidelines:</p>
-        <ul>
-          <li>Mr. Kipkemoi arap Kirui (Team Leader)</li>
-          <li>Mr. Rana Tiampati</li>
-          <li>Mr. Kennedy Malinda</li>
-          <li>Ms. Anna Musandu</li>
-          <li>Mr. Samuel Kalama</li>
-          <li>Mr. Salem Lorot</li>
-          <li>Ms. Fiona Musili</li>
-          <li>Mr. Benson Inzofu</li>
-          <li>Ms. Laureen Wesonga</li>
-          <li>Ms. Anne Shibuko</li>
-          <li>Mr. James Maina Macharia</li>
-          <li>Mr. Morrice Shilungu</li>
-          <li>Mr. Finlay Muriuki</li>
-          <li>Ms. Rabeca Munyao</li>
-          <li>Mr. Stephen Omunzi</li>
-        </ul>
-      </section>
 
       <section className="background">
         <h3>Background</h3>
