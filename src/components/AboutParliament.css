@@ -61,18 +61,16 @@
   text-align: left;
 }
 
-
 .overview h2{
-  padding: 0 0 30px 160px;
+  padding: 40px 0 30px 180px;
   font-size: 2.5rem;
   text-align: left;
   width: 80%;
-  font-weight: 600;
-  font-family: 'Poppins';
+  font-weight: 700;
+  font-family: 'Dm Sans';
   margin-bottom: 10px;
   color: #000000;
 }
-
 
 .facts-title{
   padding: 0 40px;
@@ -163,6 +161,7 @@
   color: black;
   background-color: #f9f9f9;
   font-size: 0.9rem;
+
 }
 
 .section {
@@ -279,12 +278,13 @@ body {
 
 /* Side Navigation Styles */
 .side-nav {
+  align-items: center;
   position: -webkit-sticky; /* For Safari */
   position: sticky;
   top: 0;
-  width: 300px; /* Adjust width as needed */
+  width: 300px; 
   height: 100vh;
-  padding-top: 50px;
+  padding-top: 80px;
   overflow-y: auto; /* Allow scrolling if content overflows */
   float: left; /* Ensure it floats to the left */
 }
@@ -317,4 +317,74 @@ body {
 
 .scroll-to-top:hover {
   background-color: #0056b3; /* Change as needed */
+}
+
+/* PublicEngagement.css */
+
+.public-engagement {
+  background-color: #f4f4f4; /* Light background for contrast */
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 20px auto; /* Centered with margin on top and bottom */
+}
+
+.public-engagement ol {
+  margin: auto;
+  width: 80%;
+  list-style: armenian;
+}
+
+
+.engagement-title {
+  font-size: 2rem;
+  color: #000000; /* Darker text for readability */
+  margin-bottom: 20px;
+  font-family: 'Dm Sans', sans-serif; /* Modern font for a clean look */
+}
+
+.engagement-text {
+  font-size: 0.9rem;
+  color: #373f47; 
+  line-height: 1.8;
+  text-align: left;
+  font-family: 'Dm Sans';
+}
+
+.engagement-text a {
+  color: #1e90ff; /* Accent color for links */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.engagement-text a:hover {
+  text-decoration: underline;
+}
+
+.engagement-text strong {
+  color: #2c3e50; /* Same color as the title for consistency */
+}
+
+@media (max-width: 768px) {
+  .public-engagement {
+    padding: 20px;
+  }
+
+  .engagement-title {
+    font-size: 1.8rem;
+  }
+
+  .engagement-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .engagement-title {
+    font-size: 1.6rem;
+  }
+
+  .engagement-text {
+    font-size: 0.8rem;
+  }
 }

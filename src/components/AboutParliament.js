@@ -66,6 +66,7 @@ function AboutParliament() {
       <div className="about-parl">
 
       <nav className="side-nav">
+      <h2 style={{fontSize:'20px', padding:'10px', fontFamily:'Poppins', fontWeight:'900'}}>Guide</h2>
           <ul>
             <li><a href="#overview">Overview</a></li>
             <li><a href="#structure">Structure</a></li>
@@ -87,7 +88,7 @@ function AboutParliament() {
         <div className="about">
           <div className="about-parliament">
               {/* Overview Section */}
-              <section className="section overview">
+              <section id='overview' className="section overview">
                 <h2 className="section-title">Overview of the Parliament of Kenya</h2>
                 <div className="overview-inner">
                   <div className="overview-text">
@@ -103,33 +104,38 @@ function AboutParliament() {
                     </p>
                   </div>
                   <div className="overview-image">
-                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDIaKLmlM81MknIg9WbowCd95Jcy_Jp-uuoc5DhgNDN6i3Adm_gwz4C5JYJ8hfTcKUoWo&usqp=CAU' alt="Kenyan Parliament" />
+                    <img src={require('../assets/parliament-transformed.jpeg')} alt="Kenyan Parliament" />
                     <div className="image-caption">The Parliament of Kenya in session.</div>
                   </div>
+                  <div className="overview-additional">
+
+                    <div className="public-engagement">
+                        <h3 className="engagement-title">Public Engagement: A Cornerstone of Kenyan Democracy</h3>
+                        <p className="engagement-text">
+                          The Parliament of Kenya is dedicated to nurturing a dynamic and inclusive democratic process. To this end, it fosters active public participation through various channels, including
+                            <ol>
+                              <li><strong>Public petitions</strong></li>
+                              <li><strong>Consultations</strong></li> 
+                              <li><strong>Community outreach programs</strong>.</li>
+                            </ol> 
+
+                          <strong>Public Petitions:</strong> This is your opportunity to make your voice heard! Through public petitions, citizens can formally present their concerns and suggestions to the Parliament, influencing policy decisions directly. Interested in making an impact? Learn more about submitting a public petition by visiting the <a href="http://www.parliament.go.ke/contact/national_assembly_petition" target="_blank" rel="noopener noreferrer">National Assembly Petition</a> page.
+
+                          <br/><strong>Consultations:</strong> The Parliament regularly holds consultations to gather diverse inputs on legislative matters. These sessions involve civil society organizations, experts, and the public, ensuring that the legislative process benefits from a wide range of perspectives. Keep abreast of upcoming consultations by visiting the Parliament's website or subscribing to their newsletter.
+
+                          <br/><strong>Community Outreach Programs:</strong> Engaging with communities is key to the Parliament’s mission. Outreach programs aim to educate citizens about their rights and the legislative process while promoting dialogue between legislators and constituents. Through these initiatives, the Parliament strives to enhance transparency and strengthen its connection with the people.
+
+                          By prioritizing public engagement, the Parliament of Kenya is committed to ensuring that the legislative process remains transparent, accountable, and responsive to the needs of every Kenyan.
+                        </p>
+                      </div>
+                      </div>
                 </div>
-                <div className="overview-additional">
 
-                <div className="public-engagement">
-                    <h3 className="engagement-title">Public Engagement: A Cornerstone of Kenyan Democracy</h3>
-                    <p className="engagement-text">
-                      The Parliament of Kenya is dedicated to nurturing a dynamic and inclusive democratic process. To this end, it fosters active public participation through various channels, including <strong>public petitions</strong>, <strong>consultations</strong>, and <strong>community outreach programs</strong>.
-
-                      <strong>Public Petitions:</strong> This is your opportunity to make your voice heard! Through public petitions, citizens can formally present their concerns and suggestions to the Parliament, influencing policy decisions directly. Interested in making an impact? Learn more about submitting a public petition by visiting the <a href="http://www.parliament.go.ke/contact/national_assembly_petition" target="_blank" rel="noopener noreferrer">National Assembly Petition</a> page.
-
-                      <strong>Consultations:</strong> The Parliament regularly holds consultations to gather diverse inputs on legislative matters. These sessions involve civil society organizations, experts, and the public, ensuring that the legislative process benefits from a wide range of perspectives. Keep abreast of upcoming consultations by visiting the Parliament's website or subscribing to their newsletter.
-
-                      <strong>Community Outreach Programs:</strong> Engaging with communities is key to the Parliament’s mission. Outreach programs aim to educate citizens about their rights and the legislative process while promoting dialogue between legislators and constituents. Through these initiatives, the Parliament strives to enhance transparency and strengthen its connection with the people.
-
-                      By prioritizing public engagement, the Parliament of Kenya is committed to ensuring that the legislative process remains transparent, accountable, and responsive to the needs of every Kenyan.
-                    </p>
-                  </div>
-
-                </div>
               </section>
 
 
             {/* Structure Section */}
-            <section className="section structure">
+            <section id='structure' className="section structure">
               <h2 className="section-title">Structure</h2>
               <div className="sub-section bicameral-system">
                 <h3 className="sub-section-title">Bicameral System</h3>
@@ -147,7 +153,7 @@ function AboutParliament() {
             </section>
 
             {/* Functions and Roles Section */}
-            <section className="section functions">
+            <section id='functions' className="section functions">
               <h2 className="section-title">Functions and Roles</h2>
               <p className="section-text">The primary functions of the Parliament of Kenya include:</p>
               <ul className="sub-section-list modern-list">
@@ -197,7 +203,7 @@ function AboutParliament() {
             </section>
 
             {/* Parliamentary Committees Section */}
-            <section className="section committees">
+            <section id='committees' className="section committees">
               <h2 className="section-title">Parliamentary Committees</h2>
               <p className="section-text">Parliamentary committees are essential in managing the workload of Parliament and ensuring detailed scrutiny of legislation and government actions. There are several types of committees, including:</p>
               <ul className="sub-section-list">
