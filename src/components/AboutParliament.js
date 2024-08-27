@@ -109,12 +109,21 @@ function AboutParliament() {
                 </div>
                 <div className="overview-additional">
 
-                  <div className="public-engagement">
-                    <h3 className="engagement-title">Public Engagement</h3>
+                <div className="public-engagement">
+                    <h3 className="engagement-title">Public Engagement: A Cornerstone of Kenyan Democracy</h3>
                     <p className="engagement-text">
-                      The Parliament of Kenya encourages public participation through various platforms, including public petitions, consultations, and community outreach programs. These initiatives aim to bridge the gap between legislators and the public, ensuring that the legislative process is inclusive and transparent.
+                      The Parliament of Kenya is dedicated to nurturing a dynamic and inclusive democratic process. To this end, it fosters active public participation through various channels, including <strong>public petitions</strong>, <strong>consultations</strong>, and <strong>community outreach programs</strong>.
+
+                      <strong>Public Petitions:</strong> This is your opportunity to make your voice heard! Through public petitions, citizens can formally present their concerns and suggestions to the Parliament, influencing policy decisions directly. Interested in making an impact? Learn more about submitting a public petition by visiting the <a href="http://www.parliament.go.ke/contact/national_assembly_petition" target="_blank" rel="noopener noreferrer">National Assembly Petition</a> page.
+
+                      <strong>Consultations:</strong> The Parliament regularly holds consultations to gather diverse inputs on legislative matters. These sessions involve civil society organizations, experts, and the public, ensuring that the legislative process benefits from a wide range of perspectives. Keep abreast of upcoming consultations by visiting the Parliament's website or subscribing to their newsletter.
+
+                      <strong>Community Outreach Programs:</strong> Engaging with communities is key to the Parliament’s mission. Outreach programs aim to educate citizens about their rights and the legislative process while promoting dialogue between legislators and constituents. Through these initiatives, the Parliament strives to enhance transparency and strengthen its connection with the people.
+
+                      By prioritizing public engagement, the Parliament of Kenya is committed to ensuring that the legislative process remains transparent, accountable, and responsive to the needs of every Kenyan.
                     </p>
                   </div>
+
                 </div>
               </section>
 
