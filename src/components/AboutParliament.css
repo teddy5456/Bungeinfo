@@ -276,6 +276,12 @@ body {
   font-family: Arial, sans-serif; /* Adjust font as needed */
 }
 
+.side-nav h2{
+    font-size:20px;
+    padding: 10px;
+    font-family:'Poppins';
+    font-weight:900;
+}
 /* Side Navigation Styles */
 .side-nav {
   align-items: center;

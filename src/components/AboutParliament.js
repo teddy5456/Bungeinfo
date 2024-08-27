@@ -66,7 +66,7 @@ function AboutParliament() {
       <div className="about-parl">
 
       <nav className="side-nav">
-      <h2 style={{fontSize:'20px', padding:'10px', fontFamily:'Poppins', fontWeight:'900'}}>Guide</h2>
+      <h2 >Guide</h2>
           <ul>
             <li><a href="#overview">Overview</a></li>
             <li><a href="#structure">Structure</a></li>
