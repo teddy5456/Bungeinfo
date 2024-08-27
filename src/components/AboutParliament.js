@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutParliament.css';
 import Timeline from './Timeline';
+import { FaRegLightbulb } from 'react-icons/fa';
 import KenyanBicameralGovernment from './KenyanBicameralGovernment';
 
 const timelineEvents = [
@@ -63,47 +64,59 @@ function AboutParliament() {
   return (
     <>
       <div className="about-parl">
+
+      <nav className="side-nav">
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#structure">Structure</a></li>
+            <li><a href="#functions">Functions</a></li>
+            <li><a href="#committees">Committees</a></li>
+          </ul>
+          <div className="parliament-facts">
+                    <h6 className="facts-title">
+                    <FaRegLightbulb style={{ marginRight: '8px', color: 'gold', fontSize:'1.5rem' }} />Did You Know?</h6>
+                    <ul className="facts-list">
+                      <li className="facts-item">The Parliament of Kenya meets in the New Parliament Building, located in Nairobi, which was completed in 1988.</li>
+                      <li className="facts-item">The bicameral system was reintroduced in 2010 with the promulgation of Kenya’s new constitution, which aimed to enhance regional representation and check the powers of the executive.</li>
+                      <li className="facts-item">Parliament has a dedicated website where citizens can access legislative documents, track bills, and follow parliamentary debates in real-time.</li>
+                      <li className="facts-item">In addition to its legislative role, Parliament conducts inquiries and investigations into various issues affecting the nation, such as corruption and misuse of public funds.</li>
+                    </ul>
+            </div>
+        </nav>
+
         <div className="about">
           <div className="about-parliament">
-{/* Overview Section */}
-<section className="section overview">
-  <h2 className="section-title">Overview of the Parliament of Kenya</h2>
-  <div className="overview-inner">
-    <div className="overview-text">
-      <p className="section-text">
-        The Parliament of Kenya, established under the 2010 Constitution, is a bicameral legislature comprising the National Assembly and the Senate. This dual-chamber system was designed to ensure comprehensive representation and effective governance.
-      </p>
+              {/* Overview Section */}
+              <section className="section overview">
+                <h2 className="section-title">Overview of the Parliament of Kenya</h2>
+                <div className="overview-inner">
+                  <div className="overview-text">
+                    <p className="section-text">
+                      The Parliament of Kenya, established under the 2010 Constitution, is a bicameral legislature comprising the National Assembly and the Senate. This dual-chamber system was designed to ensure comprehensive representation and effective governance.
+                    </p>
 
-      <p className="section-text">
-        The Parliament’s primary functions include legislation, representation, oversight of the executive branch, and approving the national budget. It also serves as a forum for public engagement, allowing citizens to participate in the democratic process through various mechanisms such as petitions and public hearings.
-      </p>
-      <p className="section-text">
-        Historically, the Parliament of Kenya has undergone several changes, from its origins as a colonial legislative body to its current form as a key institution in Kenya’s democratic framework. The evolution reflects the country’s journey towards self-governance and inclusive democracy.
-      </p>
-    </div>
-    <div className="overview-image">
-      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDIaKLmlM81MknIg9WbowCd95Jcy_Jp-uuoc5DhgNDN6i3Adm_gwz4C5JYJ8hfTcKUoWo&usqp=CAU' alt="Kenyan Parliament" />
-      <div className="image-caption">The Parliament of Kenya in session.</div>
-    </div>
-  </div>
-  <div className="overview-additional">
-    <div className="parliament-facts">
-      <h3 className="facts-title">Did You Know?</h3>
-      <ul className="facts-list">
-        <li className="facts-item">The Parliament of Kenya meets in the New Parliament Building, located in Nairobi, which was completed in 1988.</li>
-        <li className="facts-item">The bicameral system was reintroduced in 2010 with the promulgation of Kenya’s new constitution, which aimed to enhance regional representation and check the powers of the executive.</li>
-        <li className="facts-item">Parliament has a dedicated website where citizens can access legislative documents, track bills, and follow parliamentary debates in real-time.</li>
-        <li className="facts-item">In addition to its legislative role, Parliament conducts inquiries and investigations into various issues affecting the nation, such as corruption and misuse of public funds.</li>
-      </ul>
-    </div>
-    <div className="public-engagement">
-      <h3 className="engagement-title">Public Engagement</h3>
-      <p className="engagement-text">
-        The Parliament of Kenya encourages public participation through various platforms, including public petitions, consultations, and community outreach programs. These initiatives aim to bridge the gap between legislators and the public, ensuring that the legislative process is inclusive and transparent.
-      </p>
-    </div>
-  </div>
-</section>
+                    <p className="section-text">
+                      The Parliament’s primary functions include legislation, representation, oversight of the executive branch, and approving the national budget. It also serves as a forum for public engagement, allowing citizens to participate in the democratic process through various mechanisms such as petitions and public hearings.
+                    </p>
+                    <p className="section-text">
+                      Historically, the Parliament of Kenya has undergone several changes, from its origins as a colonial legislative body to its current form as a key institution in Kenya’s democratic framework. The evolution reflects the country’s journey towards self-governance and inclusive democracy.
+                    </p>
+                  </div>
+                  <div className="overview-image">
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDIaKLmlM81MknIg9WbowCd95Jcy_Jp-uuoc5DhgNDN6i3Adm_gwz4C5JYJ8hfTcKUoWo&usqp=CAU' alt="Kenyan Parliament" />
+                    <div className="image-caption">The Parliament of Kenya in session.</div>
+                  </div>
+                </div>
+                <div className="overview-additional">
+
+                  <div className="public-engagement">
+                    <h3 className="engagement-title">Public Engagement</h3>
+                    <p className="engagement-text">
+                      The Parliament of Kenya encourages public participation through various platforms, including public petitions, consultations, and community outreach programs. These initiatives aim to bridge the gap between legislators and the public, ensuring that the legislative process is inclusive and transparent.
+                    </p>
+                  </div>
+                </div>
+              </section>
 
 
             {/* Structure Section */}

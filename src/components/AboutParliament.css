@@ -42,17 +42,27 @@
   margin-top: 40px;
 }
 
-.parliament-facts,
-.public-engagement {
+.parliament-facts {
   padding: 20px;
   border-radius: 10px;
   max-width: 800px;
   width: 100%;
+  background-color: rgb(241, 241, 241);
+}
+
+.parliament-facts h6{
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.parliament-facts li {
+  font-size: 0.8rem;
+  text-align: left;
 }
 
 .facts-title,
 .overview h2{
-  padding: 40px;
+  padding: 0 40px;
   font-size: 2.5rem;
   text-align: left;
   width: 60%;
@@ -223,4 +233,76 @@
 
 .scroll-to-top:hover {
   background-color: #00332b;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-nav li {
+  margin-bottom: 10px;
+}
+
+.side-nav a {
+  text-decoration: none;
+  color: #333; /* Change as needed */
+  font-weight: bold;
+}
+
+.side-nav a:hover {
+  color: #007bff; /* Change as needed */
+}
+
+/* Ensure the rest of the content is not hidden behind the side nav */
+.about {
+  margin-left: 270px; /* Adjust based on side-nav width */
+}
+
+/* General Layout Adjustment */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Adjust font as needed */
+}
+
+/* Side Navigation Styles */
+.side-nav {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  width: 300px; /* Adjust width as needed */
+  height: 100vh;
+  padding-top: 50px;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  float: left; /* Ensure it floats to the left */
+}
+
+/* Content Area Adjustment */
+.about {
+  margin-left: 250px; /* Match the width of side-nav */
+  padding: 20px; /* Add padding for better spacing */
+  overflow: hidden; /* Ensure no overflow issues */
+  min-height: 100vh; /* Ensure content area takes at least the full viewport height */
+}
+
+/* Ensure that the sections take full width */
+.section {
+  margin-bottom: 40px; /* Space between sections */
+}
+
+/* Scroll to Top Button Styling */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff; /* Change as needed */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3; /* Change as needed */
 }
