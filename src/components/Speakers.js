@@ -3,30 +3,6 @@ import './Speakers.css';
 
 const speakers = [
   {
-    id: 1,
-    name: 'Jomo Kenyatta',
-    photo: 'https://media.gettyimages.com/id/3426968/photo/jomo-kenyatta-president-of-the-new-republic-of-kenya.jpg?s=612x612&w=0&k=20&c=05u0EJz2dLfSlL4nOvNBVc_57djx-hfbzHpmmBO8LoQ=',
-    summary: 'Jomo Kenyatta served as Speaker of the National Assembly from 1963 to 1964.',
-    biography: 'Jomo Kenyatta was a Kenyan anti-colonial activist and politician who served as the first Prime Minister of Kenya and later as its first President...',
-    achievements: ['Led Kenya to independence', 'Established the foundation of the new nation'],
-    timeline: '1963-1964',
-    region: 'Gatundu South',
-    videoUrl: 'https://www.youtube.com/embed/video1',
-    quotes: ['"Our children may learn about the heroes of the past. Our task is to make ourselves the architects of the future."'],
-    relatedArticles: [
-      { title: 'The Legacy of Jomo Kenyatta', url: 'https://example.com/article1' },
-      { title: 'Jomo Kenyatta’s Role in Kenya’s Independence', url: 'https://example.com/article2' }
-    ],
-    socialMedia: [
-      { platform: 'Twitter', url: 'https://twitter.com/kenyatta' },
-      { platform: 'Facebook', url: 'https://facebook.com/kenyatta' }
-    ],
-    gallery: [
-      '/images/kenyatta1.jpg',
-      '/images/kenyatta2.jpg'
-    ],
-  },
-  {
     id: 2,
     name: 'Humphrey Slade',
     photo: 'https://img.mauritius-images.com/dsf/preview_watermarked/ME-PI-9316543/save_as_name/mauritius%20images%20-%2012064249%20-%20Humphrey%20Slade%20Kenya%20Delegate%2013%20February%201960.jpg',

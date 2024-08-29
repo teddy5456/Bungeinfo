@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './AboutParliament.css';
 import Timeline from './Timeline';
-import { FaRegLightbulb } from 'react-icons/fa';
+import { FaRegLightbulb, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import KenyanBicameralGovernment from './KenyanBicameralGovernment';
 
 const timelineEvents = [
@@ -54,6 +54,12 @@ const timelineEvents = [
 ];
 
 function AboutParliament() {
+  const [isDropdownOpen, setDropdownOpen] = useState(true);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -61,23 +67,37 @@ function AboutParliament() {
     });
   };
 
+
   return (
     <>
       <div className="about-parl">
 
       <nav className="side-nav">
-      <h2 >Guide</h2>
-          <ul>
-            <li><a href="#overview">Overview</a></li>
+      <br/>
+          <ul className='ul1'>
+          <li>
+              <a href="#overview">Overview</a>
+              <button onClick={toggleDropdown} className="dropdown-toggle">
+                {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
+              </button>
+              {isDropdownOpen && (
+                <ul className="dropdown-menu">
+                  <li><a href="#engagement">Engagement</a></li>
+                </ul>
+              )}
+            </li>
             <li><a href="#structure">Structure</a></li>
             <li><a href="#functions">Functions</a></li>
             <li><a href="#committees">Committees</a></li>
           </ul>
           <div className="parliament-facts">
                     <h6 className="facts-title">
-                    <FaRegLightbulb style={{ marginRight: '8px', color: 'gold', fontSize:'1.5rem' }} />Did You Know?</h6>
+  <FaRegLightbulb style={{ marginRight: '8px', color: 'gold', fontSize: '1.5rem' }} />
+  Did You Know?
+</h6>
+
                     <ul className="facts-list">
-                      <li className="facts-item">The Parliament of Kenya meets in the New Parliament Building, located in Nairobi, which was completed in 1988.</li>
+                      <li className="facts-item">The Parliament of Kenya meets in the New Parliament Building which was completed in 1988.</li>
                       <li className="facts-item">The bicameral system was reintroduced in 2010 with the promulgation of Kenya’s new constitution, which aimed to enhance regional representation and check the powers of the executive.</li>
                       <li className="facts-item">Parliament has a dedicated website where citizens can access legislative documents, track bills, and follow parliamentary debates in real-time.</li>
                       <li className="facts-item">In addition to its legislative role, Parliament conducts inquiries and investigations into various issues affecting the nation, such as corruption and misuse of public funds.</li>
@@ -134,23 +154,51 @@ function AboutParliament() {
               </section>
 
 
-            {/* Structure Section */}
-            <section id='structure' className="section structure">
-              <h2 className="section-title">Structure</h2>
-              <div className="sub-section bicameral-system">
-                <h3 className="sub-section-title">Bicameral System</h3>
-                <p className="sub-section-text">The Parliament of Kenya is divided into two houses:</p>
-                <ul className="sub-section-list">
-                <p className="section-text">
-        <strong>National Assembly:</strong> The National Assembly, the lower house of Parliament, is composed of 290 elected Members of Parliament (MPs), 47 women representatives, and 12 nominated members. It plays a crucial role in the legislative process by proposing, debating, and passing laws that affect all aspects of Kenyan life.
-      </p>
-      <p className="section-text">
-        <strong>Senate:</strong> The Senate, the upper house, represents the counties and protects their interests. It consists of 47 elected Senators, 16 women nominated by political parties, 2 youth representatives, and 2 representatives for persons with disabilities. The Senate is tasked with reviewing and amending legislation proposed by the National Assembly and addressing county concerns.
-      </p>
-                </ul>
-                <KenyanBicameralGovernment />
-              </div>
-            </section>
+              <section id='structure' className="section structure">
+                  <h2 className="section-title">Structure of the Kenyan Parliament</h2>
+
+                  <div className="sub-section bicameral-system">
+                          
+                  <div className="illustration">
+                          <img src="https://ideogram.ai/assets/image/lossless/response/TUIqYfApSDekgEnKZuQZ7A" alt="Bicameral System of the Kenyan Parliament" />
+                        
+                      </div>
+                      <h3 className="sub-section-title">Bicameral System</h3>
+                      <p className="sub-section-text">
+                          The Parliament of Kenya operates as a bicameral legislature, consisting of two distinct houses:
+                      </p>
+
+                      <div className="sub-section-content">
+                          <div className="sub-section-item">
+                              <h4 className="item-title">National Assembly</h4>
+                              <p className="item-description">
+                                  The National Assembly, the lower house, includes 290 elected Members of Parliament (MPs), 47 women representatives, and 12 nominated members. It plays a pivotal role in proposing, debating, and passing laws that influence every aspect of Kenyan life.
+                              </p>
+                          </div>
+
+                          <div className="sub-section-item">
+                              <h4 className="item-title">Senate</h4>
+                              <p className="item-description">
+                                  The Senate, the upper house, is responsible for representing the counties and safeguarding their interests. It is composed of 47 elected Senators, 16 women nominated by political parties, 2 youth representatives, and 2 representatives for persons with disabilities. The Senate reviews and can amend legislation proposed by the National Assembly and addresses county-specific issues.
+                              </p>
+                          </div>
+                      </div>
+                     
+                      <blockquote className="quote">
+                        <FaRegLightbulb style={{ marginRight: '8px', color: 'gold', fontSize: '1.5rem' }} />
+                        <p className="quote-text">
+                            The Kenyan Parliament’s bicameral structure ensures a thorough examination of legislation, representing both national and local interests to maintain balance and fairness. Did you know? 
+                            <ul>
+                                <li>The National Assembly, with its 290 MPs, is where much of the nation’s debate and legislation begin.</li>
+                                <li>The Senate, which is the upper house, plays a crucial role in safeguarding the rights of the 47 counties across Kenya.</li>
+                                <li>The Senate was established under the 2010 Constitution to enhance devolution and give a stronger voice to regional issues.</li>
+                                <li>In addition to elected members, the Senate includes representatives for youth and persons with disabilities, ensuring diverse perspectives in lawmaking.</li>
+                            </ul>
+                        </p>
+                    </blockquote>
+                              </div>
+                          </section>
+
 
             {/* Functions and Roles Section */}
             <section id='functions' className="section functions">

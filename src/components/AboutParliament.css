@@ -3,13 +3,13 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  font-family: 'Dm Sans';
 }
 
 .overview-text {
   max-width: 800px;
   text-align: left;
-  color: 0.8rem;
+  font-size: 0.8rem;
+  font-family: 'Dm Sans';
 }
 
 .overview-image {
@@ -48,7 +48,7 @@
   border-radius: 10px;
   max-width: 800px;
   width: 100%;
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(237, 237, 237);
 }
 
 .parliament-facts h6{
@@ -63,11 +63,11 @@
 
 .overview h2{
   padding: 40px 0 30px 180px;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   text-align: left;
   width: 80%;
   font-weight: 700;
-  font-family: 'Dm Sans';
+  font-family: 'Poppins';
   margin-bottom: 10px;
   color: #000000;
 }
@@ -156,12 +156,10 @@
 }
 
 .about-parl {
-  font-family: Arial, sans-serif;
   padding: 20px;
   color: black;
   background-color: #f9f9f9;
   font-size: 0.9rem;
-
 }
 
 .section {
@@ -277,22 +275,65 @@ body {
 }
 
 .side-nav h2{
-    font-size:20px;
+    font-size:1.4rem;
+    color: #17570a;
     padding: 10px;
-    font-family:'Poppins';
+    font-family:'Dm Sans';
     font-weight:900;
+    text-align: left;
+    margin-left: 45px;
 }
+
 /* Side Navigation Styles */
 .side-nav {
   align-items: center;
   position: -webkit-sticky; /* For Safari */
   position: sticky;
+  font-family: 'Dm Sans';
   top: 0;
   width: 300px; 
   height: 100vh;
   padding-top: 80px;
   overflow-y: auto; /* Allow scrolling if content overflows */
   float: left; /* Ensure it floats to the left */
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 8px;
+}
+
+.side-nav button {
+  color: green;
+ font-size: 0.6rem;
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-menu a:hover {
+  color: #007bff;
+}
+
+.side-nav .ul1{
+  text-align: left;
+  margin-left: 20%;
+  font-weight: 500;
 }
 
 /* Content Area Adjustment */
@@ -328,7 +369,7 @@ body {
 /* PublicEngagement.css */
 
 .public-engagement {
-  background-color: #f4f4f4; /* Light background for contrast */
+  background-color:  #fefefe; /* Light background for contrast */
   padding: 30px;
   border-radius: 8px;
   max-width: 900px;
@@ -392,5 +433,160 @@ body {
 
   .engagement-text {
     font-size: 0.8rem;
+  }
+}
+
+/* Structure.css */
+
+.structure {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+}
+
+.structure .section-title {
+  font-size: 2.8rem;
+  font-family: 'Dm Sans';
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color:#000000;
+}
+
+.structure .sub-section {
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.structure .sub-section-title {
+  text-align: left;
+  margin-left: 50px;
+  font-family: 'Poppins';
+  font-size: 1.2rem;
+  color: #17570a;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.structure .sub-section-text {
+  text-align: left;
+  font-size: 1rem;
+  color: #000000; /* Subtle text color */
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-family: 'poppins';
+  margin-left: 50px;
+}
+
+.structure img{
+  border-radius: 8px;
+  width:100%;
+  filter: brightness(60%);
+}
+
+.structure .sub-section-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+}
+
+.structure .sub-section-item p {
+  font-family: 'Dm Sans';
+  text-align: left;
+  font-size: 1.0rem;
+  color: #000000;
+  line-height: 1.6;
+  margin: 0;
+  padding: 5px 0;
+  margin-left: 50px;
+}
+
+.item-title {
+  font-family: 'Poppins';
+  text-align: left;
+  font-size: 1.0rem;
+  margin: 20px 0 20px 50px;
+  color: #17570a;
+}
+
+.structure .sub-section-list strong {
+  color: #005AA7; /* Accent color */
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Blockquote Styling */
+.quote {
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-style: italic;
+  background-color: #fefefe;
+  border-radius: 5px;
+  position: relative;
+  text-align: left;
+  font-family: 'Dm Sans';
+}
+
+.quote-icon {
+  font-size: 24px;
+  color: #2196F3; /* Adjust color to match your theme */
+  position: absolute;
+  top: 10px;
+  left: -30px; /* Adjust positioning as needed */
+}
+
+.quote-text {
+  margin-left: 40px; /* Adjust to create space for the icon */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .structure {
+    padding: 30px 10px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .sub-section {
+    padding: 15px;
+  }
+
+  .sub-section-title {
+    font-size: 1.2rem;
+  }
+
+  .sub-section-text {
+    font-size: 0.9rem;
+  }
+
+  .sub-section-list p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .sub-section-title {
+    font-size: 1rem;
+   
+  }
+
+  .sub-section-text {
+    font-size: 0.8rem;
+  }
+
+  .sub-section-list p {
+    font-size: 0.7rem;
   }
 }

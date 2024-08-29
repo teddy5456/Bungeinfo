@@ -1,0 +1,225 @@
+.background-img {
+    margin: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -999;
+}
+
+.background-img img{
+    width: 100%;
+    object-fit: cover;
+    opacity: 50%;
+    height: 90vh;
+}
+
+
+.history-header1 h1{
+    color: rgb(255, 255, 255);
+    font-family: 'Dm Sans';
+    font-weight: 800;
+    font-size: 3.5rem;
+    padding-bottom: 30px;
+}
+
+.history-header1 h1 span {
+    color: gold;
+}
+
+.history-header1 p {
+    color:whitesmoke;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+.history-header1 {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 8%;
+    color: gold;
+    text-align: left;
+}
+
+
+.history-content {
+    width: 80%;
+    background-color: #f9f9f9;
+    margin-left: 18%;
+    padding: 50px 10%;
+    line-height: 1.6;
+    color: black;
+    font-size: 0.9rem;
+  }
+  
+  .history-content h2 {
+    font-size: 2.5rem;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-family: 'Dm Sans';
+  }
+
+  .history-content h2 span{
+   color: rgb(9, 68, 9);
+  }
+  
+  .history-content p {
+    margin-bottom: 20px;
+    text-align: left;
+    margin: 30px 0 40px 0;
+  }
+  
+  .history-content blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 5px solid #FFD700;
+    color: #555;
+  }
+
+  .building-pic img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px rgba(150, 150, 150, 1.0);
+  }
+
+
+/* Stunning Summary Section */
+.stunning-summary {
+    margin-top: 50px;
+    padding: 20px;
+    background: linear-gradient(to right, #f9f9f9, #d5e1d8);
+    border-radius: 10px;
+  }
+  
+  .summary-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: 'Dm Sans', sans-serif;
+    color: #000000;
+  }
+  
+  .timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .timeline-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .timeline-item:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border:4px solid gold;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .timeline-content h3 span {
+    color: green;
+  }
+  
+  .timeline-content p {
+    font-size: 1rem;
+    color: #34495e;
+    margin: 0;
+  }
+  
+  /* Button Styles */
+  .read-more {
+    display: block;
+    margin: 40px auto;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border:2px solid #0e5c18;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .read-more:hover {
+    background: #0e5c18;
+  }
+.facts-list1 li {
+  color: black;
+  font-size: 0.8rem;
+}
+  
+.side-nav1 h2{
+  font-size:1.4rem;
+  color: #17570a;
+  padding: 10px;
+  font-family:'Dm Sans';
+  font-weight:900;
+  text-align: left;
+  margin-left: 45px;
+}
+
+.side-nav1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-nav1 li {
+  margin-bottom: 10px;
+}
+
+.side-nav1 a {
+  text-decoration: none;
+  color: #000000; /* Change as needed */
+  font-weight: bold;
+}
+
+.side-nav1 a:hover {
+  color: #007bff; /* Change as needed */
+}
+
+/* Side Navigation Styles */
+.side-nav1 {
+align-items: center;
+position: -webkit-sticky; /* For Safari */
+position: sticky;
+font-family: 'Dm Sans';
+top: 0;
+width: 300px; 
+height: 100vh;
+background-color: #f9f9f9;
+padding: 110px 10px;
+overflow-y: auto; /* Allow scrolling if content overflows */
+float: left; /* Ensure it floats to the left */
+}
+
+.side-nav1::-webkit-scrollbar {
+  width: 2px;
+}

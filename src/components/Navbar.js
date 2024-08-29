@@ -4,24 +4,6 @@ import { Link } from 'react-router-dom';
 
 
 function Navbar() {
-  // script.js
-
-let lastScrollTop = 0; // Track the last scroll position
-const navbar = document.querySelector('.navbar-header'); // Select the navbar
-
-window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-  
-  if (currentScroll > lastScrollTop) {
-    // Scrolling down
-    navbar.style.top = '-80px'; // Hide the navbar (adjust height as needed)
-  } else {
-    // Scrolling up
-    navbar.style.top = '0'; // Show the navbar
-  }
-  
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-});
 
   return (
     <header className="navbar-header">
@@ -53,9 +35,11 @@ window.addEventListener('scroll', () => {
             <Link to="/history" className="navbar-link">History</Link>
           </li>
           <li className="navbar-item">
+            <Link to="/history-of-parliament" className="navbar-link">Buildings</Link>
+          </li>
+          <li className="navbar-item">
             <a href="#contact" className="navbar-link">Contact and Feedback</a>
           </li>
-
         </ul>
       </nav>
       </div>

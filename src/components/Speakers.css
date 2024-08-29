@@ -21,11 +21,12 @@ body {
 
 header h1 {
   font-size: 3em;
+  color:#092b09;
 }
 
 header p {
   font-size: 1.2em;
-  color: #bbbbbb;
+  color: green;
 }
 
 .search-bar {
